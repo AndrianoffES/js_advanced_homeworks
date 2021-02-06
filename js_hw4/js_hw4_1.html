@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="textBlock">
+    Direct Speech: She says, 'The lessons begin at 9 o’clock'.
+    Direct Speech: Ann said, 'I bought two tickets for the theatre'.
+    Direct Speech: The stranger said, 'I am looking for a job for my son'.
+    Direct Speech: I said, 'I’ll help him.'
+</p>
+<button id="replace">Замена</button>
+<script>
+let textBlock = document.getElementById('textBlock');
+document.getElementById('replace').addEventListener("click", ()=>{
+    textBlock.textContent = textBlock.textContent.replace(/\B'|'\B/g, '"')
+})
+</script>
+</body>
+</html>
