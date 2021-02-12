@@ -1,7 +1,7 @@
 Vue.component('products', {
     data(){
         return {
-            catalogUrl: '/catalogDta.json',
+            catalogUrl: '/catalogData.json',
             products: [],
             filtered: [],
             imgCatalog: 'https://placehold.it/200x150',
